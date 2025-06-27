@@ -35,7 +35,7 @@ class AddFoodPage extends StatelessWidget {
             children: [
               Text(
                 'Dish Details',
-                // style: AppTextStyles.headline1(context),
+                style: AppTextStyles.headline1(context),
               ),
               SizedBox(height: 16.h),
               AddFoodForm(
@@ -52,9 +52,12 @@ class AddFoodPage extends StatelessWidget {
                       description: descController.text,
                       price: double.tryParse(priceController.text) ?? 0,
                       preparationTime: prepTimeController.text,
-                      types: [typeController.text],
+                      categories: [typeController.text],
                       additives: [],
+                      images: ['https://source.unsplash.com/random/300x300/?food'],
+                      status: 'Available',
                       imageUrl: 'https://source.unsplash.com/random/300x300/?food',
+                      types: [], // Add empty list or appropriate value
                     );
                     foodController.addFood(newFood);
                     Get.back();

@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppColors {
-  static const Color primary = Color.fromARGB(155, 233, 12, 12);
-  static const Color primaryLight = Color(0xFF60AD5E);
-  static const Color primaryDark = Color(0xFF005005);
-  static const Color secondary = Color(0xFFFFC107);
-  static const Color secondaryLight = Color(0xFFFFF350);
-  static const Color secondaryDark = Color(0xFFC79100);
+  static const Color primary = Color(0xFFE64A19);
+  static const Color primaryLight = Color(0xFFFF8A65);
+  static const Color primaryDark = Color(0xFFBF360C);
+  static const Color secondary = Color(0xFFFFA000);
+  static const Color secondaryLight = Color(0xFFFFD149);
+  static const Color secondaryDark = Color(0xFFC67100);
   static const Color lightWhite = Color(0xFFFAFAFA);
-  static const Color dark = Color.fromARGB(255, 38, 45, 56);
+  static const Color dark = Color(0xFF263238);
   static const Color gray = Color(0xFF90A4AE);
   static const Color grayLight = Color(0xFFECEFF1);
   static const Color red = Color(0xFFEF5350);
@@ -23,30 +23,31 @@ class AppTextStyles {
         color: AppColors.dark,
       );
 
-  static TextStyle get headline2 => TextStyle(
-        fontSize: 22.sp,
-        fontWeight: FontWeight.w600,
-        color: AppColors.dark,
-      );
-       static TextStyle headline3(BuildContext context) => TextStyle(
+  static TextStyle headline2(BuildContext context) => TextStyle(
         fontSize: 22.sp,
         fontWeight: FontWeight.w600,
         color: AppColors.dark,
       );
 
-  static TextStyle get bodyText1 => TextStyle(
+  static TextStyle headline3(BuildContext context) => TextStyle(
+        fontSize: 18.sp,
+        fontWeight: FontWeight.w600,
+        color: AppColors.dark,
+      );
+
+  static TextStyle bodyText1(BuildContext context) => TextStyle(
         fontSize: 16.sp,
         fontWeight: FontWeight.w400,
         color: AppColors.dark,
       );
 
-  static TextStyle get bodyText2 => TextStyle(
+  static TextStyle bodyText2(BuildContext context) => TextStyle(
         fontSize: 14.sp,
         fontWeight: FontWeight.w400,
         color: AppColors.gray,
       );
 
-  static TextStyle get button => TextStyle(
+  static TextStyle button(BuildContext context) => TextStyle(
         fontSize: 16.sp,
         fontWeight: FontWeight.w600,
         color: Colors.white,
