@@ -39,6 +39,7 @@ dependencies:
   cached_network_image: ^3.2.3
   google_fonts: ^4.0.4
   #image_picker: ^latest_version
+  http: ^0.13.5
 
 flutter:
   uses-material-design: true
