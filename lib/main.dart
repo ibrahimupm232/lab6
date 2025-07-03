@@ -6,6 +6,7 @@ import 'package:restaurant_app/controllers/food_controller.dart';
 import 'package:restaurant_app/views/auth/login_page.dart';
 import 'package:restaurant_app/views/auth/registration_page.dart';
 import 'package:restaurant_app/views/home/home_page.dart';
+import 'package:restaurant_app/views/restaurant_registration/restaurant_registration_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -43,6 +44,10 @@ class MyApp extends StatelessWidget {
             GetPage(
               name: '/home',
               page: () => const HomePage(),
+            ),
+            GetPage(
+              name: '/restaurant-registration',
+              page: () => const RestaurantRegistrationPage(),
             ),
           ],
         );

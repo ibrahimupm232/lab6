@@ -22,7 +22,7 @@ class AuthController extends GetxController {
       isLoggedIn.value = true;
       this.email.value = email;
       errorMessage.value = '';
-      Get.offAllNamed('/home');
+      //Get.offAllNamed('/home');
     } catch (e) {
       errorMessage.value = e.toString();
       Get.snackbar(

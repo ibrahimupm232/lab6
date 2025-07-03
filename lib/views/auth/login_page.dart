@@ -98,7 +98,7 @@ class LoginPage extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 40.h),
-     Obx(
+          Obx(
   () => CustomButton(
     text: 'LOGIN',
     onPressed: authController.isLoggedIn.value
@@ -108,6 +108,9 @@ class LoginPage extends StatelessWidget {
               emailController.text.trim(),
               passwordController.text.trim(),
             );
+                 if (authController.isLoggedIn.value) {
+              Get.offAllNamed('/restaurant-registration');
+            }
           },
   ),
 ),
